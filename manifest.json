@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Timer Extension",
+  "version": "1.0.0",
+  "description": "Notify you keep you off social media",
+  "icons": {
+    "16": "timer.png",
+    "48": "timer.png",
+    "128": "timer.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "timer.png",
+      "24": "timer.png",
+      "32": "timer.png"
+    },
+    "default_title": "Timer Extension Action Title",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
